@@ -1,0 +1,111 @@
+
+/* Base styles (extra small devices - mobile */
+
+body{
+    background-color: #FFFFFF;
+}
+
+#header-body {
+    margin: 0;
+    padding: 0;
+    background-image: url("images/Background.png");
+    background-size: cover;
+
+}
+
+#header-nav {
+    display: flex;
+    align-items: center;
+    margin: 32px;
+    margin-top: 0;
+}
+
+#header-menu {
+    flex: 1; /* Make the image container grow to fill the available space */
+    text-align: right; /* Align the content (image) to the right */
+}
+
+#header-menu img {
+    max-width: 100%;
+    height: auto; /* Ensure image height adjusts proportionally */
+}
+
+
+#header-content{
+    padding: 116px 32px 210px 32px;
+}
+
+#header-button{
+    width: 153px;
+    height: 42px;
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: transparent;
+    margin-top: 32px;
+}
+
+#header-subtitle{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30.33px;
+    text-align: left;
+    color:#FFFFFF;
+}
+
+#newest-reads-section {
+    margin: 0 auto; /* This will center the section horizontally */
+    padding: 0 32px; /* Adjust padding as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-image{
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-date{
+    text-align: left;
+    margin-top: 35px;
+}
+
+.card-read-more-container {
+    text-align: right;
+    margin-bottom: 64px;
+}
+
+.card-read-more{
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 500;
+    color: #D9852C;
+    text-decoration: none;
+}
+
+/* Mobile and Tablet */
+@media screen and (min-width: 576px){
+
+}
+
+/* tablets and laptops */
+@media screen and (min-width: 758px){
+
+}
+
+/* laptops and desktop */
+@media screen and (min-width: 992px){
+
+}
+
+/* large desktop */
+@media screen and (min-width: 1200px){
+
+}
