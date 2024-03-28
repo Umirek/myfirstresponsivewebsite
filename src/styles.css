@@ -20,9 +20,10 @@ body{
     margin-top: 0;
 }
 
+
 #header-menu {
     flex: 1; /* Make the image container grow to fill the available space */
-    text-align: right; /* Align the content (image) to the right */
+    text-align: right;
 }
 
 #header-menu img {
@@ -30,9 +31,51 @@ body{
     height: auto; /* Ensure image height adjusts proportionally */
 }
 
-
+/* Style The Dropdown Button */
+.dropbtn {
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    z-index: 1;
+    right: 0;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
 #header-content{
-    padding: 116px 32px 210px 32px;
+    padding: 155px 32px 210px 32px;
 }
 
 #header-button{
