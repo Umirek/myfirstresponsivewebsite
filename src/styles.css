@@ -1,9 +1,79 @@
+/* Font Styles */
 
-/* Base styles (extra small devices - mobile */
+html {
+    font-size: 14px;
+}
 
 body{
-    background-color: #FFFFFF;
+    max-resolution: 0;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    color: #444444;
+    max-width: 100%;
+    margin: 0;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Libre Caslon Display", sans-serif;
+}
+
+h1 {
+    font-family: Libre Caslon Display;
+    font-size: 3.75rem;
+    font-weight: 600;
+    line-height: 61.8px;
+    color: #FFFFFF;
+    text-align: left;
+    margin: 32px 0;
+    
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-family: Inter;
+    font-weight: 900;
+    line-height: 36.79px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+h3 {
+    color: #000000;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.05px;
+    font-size: 1.75rem;
+    margin-top: 40px;
+
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 24.2px;
+    text-align: left;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+
+
+
+/* */
+
+
+
+/* Base styles (extra small devices - mobile */
 
 #header-body {
     margin: 0;
@@ -49,7 +119,7 @@ body{
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    font-size: 18px;
+    font-size: 1.5rem;
     font-family: "Inter", sans-serif;
     font-weight: bold;
     z-index: 1;
@@ -79,12 +149,12 @@ body{
 }
 
 #header-button{
-    width: 153px;
-    height: 42px;
+    width: 11rem;
+    height: 3rem;
     border-radius: 10px;
     border: 2px solid #FFFFFF;
     font-family: Inter;
-    font-size: 18px;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #FFFFFF;
     background-color: transparent;
@@ -93,59 +163,80 @@ body{
 
 #header-subtitle{
     font-family: "Inter", sans-serif;
-    font-size: 18px;
+    font-size: 1.25rem;
     font-weight: 500;
     line-height: 30.33px;
     text-align: left;
     color:#FFFFFF;
 }
 
-#newest-reads-section {
-    margin: 0 auto; /* This will center the section horizontally */
-    padding: 0 32px; /* Adjust padding as needed */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#title-blog-cards{
     text-align: center;
 }
 
-.card-image{
+.blog-cards-wrapper{
+    max-width: 360px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blog-card-body{
+    padding: 5px;
+}
+
+.blog-card{
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px grey;
+}
+
+.blog-card-image > img{
     object-fit: cover;
     width: 100%;
 }
 
-.card-date{
-    text-align: left;
-    margin-top: 35px;
+.blog-card-title{
+    margin: 0;
+    margin-bottom: 5px;
 }
 
-.card-read-more-container {
-    text-align: right;
-    margin-bottom: 64px;
-}
-
-.card-read-more{
-    font-family: Inter;
-    font-size: 15px;
-    font-weight: 500;
-    color: #D9852C;
-    text-decoration: none;
-}
 
 /* Mobile and Tablet */
 @media screen and (min-width: 576px){
 
+    html {
+        font-size: 16px;
+    }
+    .blog-cards-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 720px;
+    }
+
+    .blog-card{
+        width: calc((100% - 10px - 4px) / 2);
+    }
+
 }
 
-/* tablets and laptops */
-@media screen and (min-width: 758px){
-
-}
 
 /* laptops and desktop */
-@media screen and (min-width: 992px){
+@media screen and (min-width: 1100px){
+    html {
+        font-size: 18px;
+    }
+    
+    .blog-cards-wrapper{
+        max-width: 1200px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
+    .blog-card{
+        width: calc((100% - 20px - 6px) / 3);
+    }
 }
 
 /* large desktop */
